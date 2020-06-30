@@ -1,8 +1,6 @@
 import React from 'react'
 
-const FirstApp = () => {
-  const greeting = 'Hola mundo'
-
+const FirstApp = ({ greeting = 'Hola mundo' }) => {
   // const person = {
   //   name: 'Leo',
   //   age: 34
