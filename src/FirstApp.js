@@ -1,11 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const FirstApp = ({ greeting = 'Hola mundo' }) => {
-  // const person = {
-  //   name: 'Leo',
-  //   age: 34
-  // }
-
+const FirstApp = ({ greeting }) => {
   return (
     <>
       <h1>{greeting}</h1>
@@ -13,6 +9,10 @@ const FirstApp = ({ greeting = 'Hola mundo' }) => {
       <p>Mi primera aplicación</p>
     </>
   )
+}
+
+FirstApp.propTypes = {
+  greeting: PropTypes.string.isRequired
 }
 
 export default FirstApp

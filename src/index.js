@@ -5,4 +5,4 @@ import FirstApp from './FirstApp'
 
 const divRoot = document.querySelector('#root')
 
-ReactDOM.render(<FirstApp />, divRoot)
+ReactDOM.render(<FirstApp greeting="Hola, soy Goku" />, divRoot)
