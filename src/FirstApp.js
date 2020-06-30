@@ -1,7 +1,20 @@
 import React from 'react'
 
 const FirstApp = () => {
-  return <h1>Hola mundo</h1>
+  const greeting = 'Hola mundo'
+
+  // const person = {
+  //   name: 'Leo',
+  //   age: 34
+  // }
+
+  return (
+    <>
+      <h1>{greeting}</h1>
+      {/* <pre>{JSON.stringify(person, null, 3)}</pre> */}
+      <p>Mi primera aplicación</p>
+    </>
+  )
 }
 
 export default FirstApp
