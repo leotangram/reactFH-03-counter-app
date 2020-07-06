@@ -4,7 +4,7 @@ import '@testing-library/jest-dom'
 import { shallow } from 'enzyme'
 import FirstApp from '../FirstApp'
 
-describe('<FirstApp />', () => {
+describe('FirstApp', () => {
   // test('should show the message "Hola, soy Goku"', () => {
   //   const greeting = 'Hola, soy Goku'
   //   const { getByText } = render(<FirstApp greeting={greeting} />)
