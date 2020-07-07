@@ -31,4 +31,13 @@ describe('CounterApp', () => {
     const number = wrapper.find('h2').text().trim()
     expect(number).toBe('9')
   })
+
+  test('should add default vaule with button reset', () => {
+    const value = 100
+    const wrapper = shallow(<CounterApp value={value} />)
+    wrapper.find('button').at(0).simulate('click')
+    wrapper.find('button').at(1).simulate('click')
+    const number = wrapper.find('h2').text().trim()
+    expect(number).toBe('100')
+  })
 })
